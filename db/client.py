@@ -1,8 +1,6 @@
 ## manage the connection to MongoDB
 
 from pymongo import MongoClient
-from dotenv import load_dotenv
-import os
 
 
 ## Local database
@@ -11,6 +9,5 @@ import os
 
 # Cloud database
 
-load_dotenv()
-MONGO_URI = os.environ.get("DB_STRING")
+MONGO_URI = "mongodb+srv://tsting_user:testinguser@mongosebasp.ozcuobk.mongodb.net/?retryWrites=true&w=majority"
 db_client = MongoClient(MONGO_URI).MongoSebasP

@@ -6,12 +6,8 @@ from pydantic import BaseModel
 from db.models.users_model import User, User_db
 from db.client import db_client
 from datetime import datetime, timedelta, timezone
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
-
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = "49fe70b9a3e889ed3adf40e76293b0cfe0b0368afce4fd376bcec7261eb7d180"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRATION_MINUTES = 30
 

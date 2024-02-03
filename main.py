@@ -31,3 +31,7 @@ app.include_router(login.router)
 @app.get("/")
 def root():
   return 'This is the First test for the user API. In this API we will find testing information from fake users that is made to model a users API'
+
+@app.get("/index")
+async def index():
+  return 'Second test for path'

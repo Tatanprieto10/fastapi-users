@@ -6,7 +6,8 @@ app = FastAPI()
 
 # Accessible addresses 
 origin = [
-  'http://localhost:3000'
+  'http://localhost:3000',
+  "https://tatanprieto10.github.io"
 ]
 
 # CORS
